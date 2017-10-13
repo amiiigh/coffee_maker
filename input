@@ -1,0 +1,25 @@
+CoffeeMachine = Brewer + CoffeeMaker + Creamer + ?TeaMaker
+CoffeeMaker = American | Espresso
+Creamer = Regular ^ Irish
+#
+{CoffeeMachine, Brewer, CoffeeMaker, American, Creamer, Regular}
+{CoffeeMachine, Brewer, CoffeeMaker, Creamer, Regular, TeaMaker}
+##
+A=?B+?C
+B=D|E
+#
+{A,B,C,D,E}
+{A,D}
+##
+a = ?b+?c
+b = ?d+?e
+c = f + ?g
+#
+{a}
+{a,b}
+{a,b,d}
+{a,c}
+{a,f}
+{a,c,f}
+{a,c,f,g}
+##
